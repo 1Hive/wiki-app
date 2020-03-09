@@ -1,0 +1,30 @@
+{
+  "roles": [
+    {
+      "name": "Create wiki pages",
+      "id": "CREATE_PAGE_ROLE",
+      "params": []
+    },
+    {
+      "name": "Edit wiki pages",
+      "id": "EDIT_PAGE_ROLE",
+      "params": [
+        "Page name"
+      ]
+    },
+    {
+      "name": "Delete wiki pages",
+      "id": "DELETE_PAGE_ROLE",
+      "params": [
+        "Page name"
+      ]
+    }
+  ],
+  "environments": {
+    "default": {
+      "network": "rpc",
+      "appName": "wiki.aragonpm.eth"
+    }
+  },
+  "path": "contracts/Wiki.sol"
+}
